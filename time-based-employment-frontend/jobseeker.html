@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Find Jobs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">TimeWork</div>
+
+<div class="nav-links">
+<a href="homepage.html" data-translate="home">Home</a>
+<a href="jobseeker.html" data-translate="findJobs">Find Jobs</a>
+<a href="jobprovider.html" data-translate="postJob">Post Job</a>
+<a href="notification.html" data-translate="notifications">Notifications</a>
+</div>
+
+<div id="authArea">
+<a href="userlogin.html">
+<button class="login-btn">Login/Register</button>
+</a>
+</div>
+
+</nav>
+
+
+<div class="container layout">
+
+
+<!-- FILTER SIDEBAR -->
+
+<div class="sidebar">
+
+<h3 data-translate="filters">Filters</h3>
+
+<div class="filter-group">
+<label>Location</label>
+<input id="locationFilter" class="input" placeholder="Enter location">
+</div>
+
+<div class="filter-group">
+
+<label>Time Duration</label>
+
+<label><input type="checkbox" value="hourly"> Hourly</label>
+<label><input type="checkbox" value="daily"> Daily</label>
+<label><input type="checkbox" value="weekly"> Weekly</label>
+<label><input type="checkbox" value="monthly"> Monthly</label>
+
+</div>
+
+</div>
+
+
+
+<!-- JOB LIST -->
+
+<div style="flex:1">
+
+<h2 data-translate="searchResults">Search Results</h2>
+
+<!-- Jobs will load dynamically here -->
+
+<div id="jobList"></div>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
